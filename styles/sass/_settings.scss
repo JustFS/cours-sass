@@ -1,0 +1,45 @@
+// FONT
+@font-face {
+  font-family: "font-1";
+  src: url(../../assets/fonts/FugazOne-Regular.ttf);
+}
+
+@font-face {
+  font-family: "font-2";
+  src: url(../../assets/fonts/RampartOne-Regular.ttf);
+}
+$font-1: "font-1", sans-serif;
+$font-2: "font-2", serif;
+
+// COLORS
+$color-1: rgb(253, 222, 164);
+$color-2: rgb(243, 73, 101);
+$white: rgb(240, 240, 240);
+$black: rgb(15, 15, 15);
+
+// MIXINS
+@mixin center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin shadow($blur) {
+  box-shadow: 2px 1px $blur rgba(243, 73, 101, 0.5);
+}
+
+// GENERAL SETTINGS
+* {
+  margin: 5px;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: $font-2;
+}
+body {
+  background: $color-1;
+  color: $black;
+}
+p {
+  font-family: $font-1;
+}

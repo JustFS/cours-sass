@@ -1,0 +1,14 @@
+.section-2 {
+  h2 {
+    @extend h1;
+    @include center;
+  }
+  .img {
+    @include center;
+
+    img {
+      border-radius: 30px;
+      @include shadow(20px);
+    }
+  }
+}

@@ -1,0 +1,28 @@
+.section-1 {
+  h1 {
+    color: $color-2;
+    font-size: 3rem;
+    letter-spacing: 1px;
+  }
+
+  ul {
+    li {
+      transition: 0.2s;
+      @include center;
+
+      &:hover {
+        letter-spacing: 3px;
+        @include shadow(2px);
+      }
+    }
+    li:nth-child(1) {
+      text-decoration: underline;
+    }
+    li:nth-child(2) {
+      text-decoration: underline wavy;
+    }
+    li:nth-child(3) {
+      text-decoration: underline overline $color-2;
+    }
+  }
+}

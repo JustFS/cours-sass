@@ -1,0 +1,12 @@
+** Télécharger NodeJS **
+
+=> npm i -g sass
+=> Télécharger plugin "Live Sass Compliler"
+=> Lancer le compiler : cliquer sur "Watch Sass" ou dans Command Palette (Ctrl+shift+P) taper Watch Sass.
+
+** Sass avec Node **
+Dans la console :
+=> npm init -y
+=> npm i -g sass
+Lancer la compilation : dans "package.json" écrire un nouveau script "sass" : "sass --watch ./main.scss:./style.css"
+=> npm run Sass

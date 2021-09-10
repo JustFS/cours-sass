@@ -1,0 +1,19 @@
+nav {
+  margin-bottom: 20px;
+
+  ul {
+    display: flex;
+    justify-content: space-around;
+
+    li {
+      font-size: 1.1rem;
+      transition: 0.1s;
+      cursor: pointer;
+
+      &:hover {
+        transform: translateX(2px);
+        color: $color-2;
+      }
+    }
+  }
+}
